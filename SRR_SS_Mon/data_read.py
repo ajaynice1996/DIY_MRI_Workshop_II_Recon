@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import zoom
 from typing import Dict, Tuple
-from skimage.filters import threshold_otsu
+# from skimage.filters import threshold_otsu
 
 class PairedMRI:
     def __init__(self, root_dir: str):

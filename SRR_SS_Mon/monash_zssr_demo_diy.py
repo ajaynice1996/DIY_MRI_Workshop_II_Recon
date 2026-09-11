@@ -15,7 +15,6 @@
 
 import sys
 sys.path.insert(0, './')  # Adjust the path as necessary to import from src_niv
-sys.path.append('./LFsim')
 sys.path.append('./zssr')
 import os
 import nibabel as nib
@@ -80,7 +79,7 @@ crop_sizes = [32] # size of the patches to crop from the image
 noise_stds = [0.0] # standard deviation of the noise to add to the image
 
 # Load dataset
-training_path = "niv_raw_data/ULC_img_enhancement/Training_data"
+training_path = "data/Training_data"
 dataset = PairedMRI(training_path)
 kernel_path = '/Users/sairamgeethanath/Documents/Contributions/Tools/Projects/R21/lf-brain-tracking/src/ZSSR_master/kernel_example/BSD100_100_lr_rand_ker_c_X2_0.mat'
 
